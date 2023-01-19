@@ -13,7 +13,7 @@ public class Board {
     /** pieces for the board */
     private Piece[][] pieces;
     /** size of the board */
-    private int size;  // not needed - can go by length but implemented instead
+    protected int size;  // not needed - can go by length but implemented instead
 
     // public class constants about generic games
     /** the default size of the board */
@@ -28,7 +28,6 @@ public class Board {
 //Constructors and related methods
     /** create a board of the default size */
     public Board() {
-        int row, column;
 
         size = DEFAULTSIZE;
         pieces = new Piece[size][size];
@@ -39,8 +38,6 @@ public class Board {
       * @param inSize - size of board
       */
     public Board(int inSize) {
-        int row, column;
-
         size = inSize;
         pieces = new Piece[size][size];
         blankBoard();

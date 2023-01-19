@@ -1,12 +1,27 @@
 public class CheckerPiece extends Piece {
-    private int color;
+    public static final int BLACK = 2;
+    public static final int WHITE = 1;
+
     
-    public CheckerPiece(int inType, int inColor) {
+    public CheckerPiece(int inType) {
         super(inType);
-        color = inColor;
+        
     }
     
+    public void setType(int newType) {
+		type = newType;
+	}
+
+    public int getOpposite(int inType){
+        if (inType < MAX-1 || inType > MAX)
+            if (inType == 1) return 2;
+            else return 1;
+        return -1;
+   }
+
     public char toChar() {
-        if (type == 1) return 'p'; else return 'k';
+        if (type == BLACK) return 'B'; 
+        if (type == WHITE) return 'W';    
+        else return '-';
     }
 }
