@@ -12,12 +12,11 @@ public class CheckerPiece extends Piece {
 		type = newType;
 	}
 
-    public int getOpposite(int inType){
-        if (inType < MAX-1 || inType > MAX)
-            if (inType == 1) return 2;
-            else return 1;
-        return -1;
-   }
+    public int getOpp(int inType) {
+		if (inType <= MIN || inType > MAX) return -1;
+		if (inType == WHITE) return BLACK;
+		else return WHITE;
+	}
 
     public char toChar() {
         if (type == BLACK) return 'B'; 

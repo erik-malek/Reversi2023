@@ -13,7 +13,7 @@ public class Board {
     /** pieces for the board */
     private Piece[][] pieces;
     /** size of the board */
-    protected int size;  // not needed - can go by length but implemented instead
+    protected int size;  
 
     // public class constants about generic games
     /** the default size of the board */
