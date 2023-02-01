@@ -82,7 +82,7 @@ public class Reversi extends Board {
             }
 
             //Direction = left
-            for(; left; colStep--) {
+            if(left) {
                 if(getPiece(row,colStep).getType() != piece.getOpp(team)) {
                     left = false;
                 } else {
