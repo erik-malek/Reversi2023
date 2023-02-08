@@ -30,7 +30,6 @@
            }
          };
          buttons[row][col].setBackground(Color.GREEN);
-         
          frame.add(buttons[row][col]);
        }
      }
