@@ -72,7 +72,7 @@ public class GUI extends JFrame implements ActionListener {
         // Add action listeners to menu items
         saveItem.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(Main.this, "Game has been saved");
+                JOptionPane.showMessageDialog(GUI.this, "Game has been saved");
             }
         });
 
